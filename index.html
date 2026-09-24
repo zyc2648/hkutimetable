@@ -3,26 +3,29 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>HKU Timetable 2026-27 S1</title>
+<title>HKU 日历订阅 · Timetable &amp; Academic Calendar</title>
 <style>
-  body { font-family: -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif; max-width: 640px; margin: 40px auto; padding: 0 20px; color: #1d1d1f; }
+  body { font-family: -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif; max-width: 660px; margin: 40px auto; padding: 0 20px; color: #1d1d1f; }
   h1 { font-size: 1.4em; }
+  h2 { font-size: 1.1em; margin-top: 0; }
   .card { border: 1px solid #d2d2d7; border-radius: 12px; padding: 20px; margin: 16px 0; }
   a.btn { display: inline-block; background: #0071e3; color: #fff; text-decoration: none; padding: 10px 18px; border-radius: 8px; margin: 4px 8px 4px 0; }
-  code { background: #f5f5f7; padding: 2px 6px; border-radius: 4px; font-size: 0.9em; }
+  a.btn.alt { background: #f5f5f7; color: #0071e3; }
+  code { background: #f5f5f7; padding: 2px 6px; border-radius: 4px; font-size: 0.85em; word-break: break-all; }
   table { border-collapse: collapse; width: 100%; font-size: 0.9em; }
   td, th { border-bottom: 1px solid #e5e5ea; padding: 6px 8px; text-align: left; }
+  .muted { color: #6e6e73; font-size: 0.85em; }
 </style>
 </head>
 <body>
-<h1>HKU Timetable 2026-27 Semester 1</h1>
+<h1>HKU 日历订阅</h1>
+<p class="muted">两个独立订阅，互不影响。iPhone：日历 → 账户 → 添加账户 → 其他 → 添加已订阅的日历，粘贴链接；或直接点按钮。</p>
+
 <div class="card">
-  <p><strong>iPhone 订阅方法：</strong>点下面的按钮（或到 日历 → 账户 → 添加订阅日历，粘贴链接）：</p>
-  <a class="btn" href="webcal://zyc2648.github.io/hkutimetable/timetable.ics">订阅此日历</a>
-  <a class="btn" href="timetable.ics">直接下载 .ics</a>
-  <p>订阅链接（手动粘贴用）：<code>https://zyc2648.github.io/hkutimetable/timetable.ics</code></p>
-</div>
-<div class="card">
+  <h2>① 课表 · Timetable 2026-27 S1</h2>
+  <a class="btn" href="webcal://zyc2648.github.io/hkutimetable/timetable.ics">订阅课表</a>
+  <a class="btn alt" href="timetable.ics">直接下载 .ics</a>
+  <p>链接：<code>https://zyc2648.github.io/hkutimetable/timetable.ics</code></p>
   <table>
     <tr><th>时间</th><th>课程</th><th>地点</th></tr>
     <tr><td>周一 12:00–14:50</td><td>ENGG1101-1G</td><td>TWFINNO-A</td></tr>
@@ -36,7 +39,28 @@
     <tr><td>周五 14:00–14:50</td><td>MATH1851-1B</td><td>—</td></tr>
     <tr><td>周五 18:00–19:00</td><td>CCST9016 Tutorial</td><td>—</td></tr>
   </table>
-  <p>教学周期：2026-09-01 至 2026-11-30，Reading Week（10-12 至 10-17）自动跳过。</p>
+  <p class="muted">教学周期：2026-09-01 至 2026-11-30，Reading Week（10-12 至 10-17）自动跳过。</p>
+</div>
+
+<div class="card">
+  <h2>② 学术日历 · Academic Calendar 2026-27</h2>
+  <a class="btn" href="webcal://zyc2648.github.io/hkutimetable/academic-calendar-2026-27.ics">订阅学术日历</a>
+  <a class="btn alt" href="academic-calendar-2026-27.ics">直接下载 .ics</a>
+  <p>链接：<code>https://zyc2648.github.io/hkutimetable/academic-calendar-2026-27.ics</code></p>
+  <table>
+    <tr><th>项目</th><th>日期</th></tr>
+    <tr><td>S1 开课 / 最后教学日</td><td>2026-09-01 / 2026-11-30</td></tr>
+    <tr><td>S1 Reading / Field Trip Week</td><td>2026-10-12 – 10-17</td></tr>
+    <tr><td>S1 复习期 / 考试期</td><td>2026-12-01 – 12-05 / 2026-12-07 – 12-23</td></tr>
+    <tr><td>寒假</td><td>2026-12-24 – 2027-01-17</td></tr>
+    <tr><td>S2 开课 / 最后教学日</td><td>2027-01-18 / 2027-04-30</td></tr>
+    <tr><td>农历新年停课</td><td>2027-02-06 – 02-12</td></tr>
+    <tr><td>S2 Reading / Field Trip Week</td><td>2027-03-08 – 03-13</td></tr>
+    <tr><td>S2 复习期 / 考试期</td><td>2027-05-03 – 05-07 / 2027-05-08 – 05-25</td></tr>
+    <tr><td>可选暑期学期</td><td>2027-06-28 – 08-21</td></tr>
+  </table>
+  <p class="muted">来源：The University of Hong Kong — Calendar for the Academic Year 2026-2027（Annex II, document 198/823 amended）。
+  含 16 项学期里程碑 + 20 个公众/大学假期。公众假期以政府公布为准；如校历更新，此处会同步更新，你无需重新订阅。</p>
 </div>
 </body>
 </html>
